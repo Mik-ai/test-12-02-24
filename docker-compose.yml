@@ -1,0 +1,16 @@
+version: '3'
+
+services: 
+  valid_service: 
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: write_valid_container_name 
+    restart: always  
+    ports:
+      - "8000:8000" 
+    environment:
+      - port=8000
+
+
+    
